@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>HUI</title>
+    <style>
+        .ratio_button {
+            width: 26px;
+            height: 26px;
+            background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13Z' fill='%23B0B796'/%3E%3C/svg%3E");
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: transform 0.2s;
+        }
+
+        .Rectangle19:focus {
+            outline: none;
+        }
+
+        .Rectangle19:active {
+            outline: none;
+        }
+
+        .ratio_button.clicked {
+            background-image: url("data:image/svg+xml,%3Csvg width='26' height='30' viewBox='0 0 26 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13Z' fill='%23B0B796'/%3E%3Cg filter='url(%23filter0_d_0_1)'%3E%3Cpath d='M22 13C22 17.9706 17.9706 22 13 22C8.02944 22 4 17.9706 4 13C4 8.02944 8.02944 4 13 4C17.9706 4 22 8.02944 22 13Z' fill='%23ACEA7C'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_0_1' x='0' y='4' width='26' height='26' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_0_1'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_0_1' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body>
+<script src="script.js"></script>
+
+<div style="width: 800px; height: 480px; position: relative; background: white">
+    <div class="MainArea"
+         style="width: 782px; height: 467px; left: 9px; top: 14px; position: absolute; background: white; border-radius: 20px; border: 0.70px black solid"></div>
+    <div class="Rectangle6"
+         style="width: 323px; height: 398px; left: 20px; top: 64px; position: absolute; background: rgba(244, 231, 213, 0.80); border-radius: 20px; border: 0.70px black solid"></div>
+    <div class="Ellipse7" style="width: 26px; height: 26px;left: 45px; top: 287px; position: absolute;">
+        <button class="ratio_button" onclick="setClicked(this)"></button>
+    </div>
+    <div class="Ellipse5" style="width: 26px; height: 26px; left: 45px; top: 175px; position: absolute;">
+        <button class="ratio_button" onclick="setClicked(this)"></button>
+    </div>
+    <div class="Ellipse6" style="width: 26px; height: 26px; left: 45px; top: 231px; position: absolute;">
+        <button class="ratio_button" onclick="setClicked(this)"></button>
+    </div>
+    <div style="left: 85px; top: 289px; position: absolute; text-align: center; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">
+        сорные включения
+    </div>
+    <div class="Ellipse8" style="width: 26px; height: 26px; left: 45px; top: 343px; position: absolute;">
+        <button class="ratio_button" onclick="setClicked(this)"></button>
+    </div>
+    <div style="left: 85px; top: 345px; position: absolute; text-align: center; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">
+        чистое зерно
+    </div>
+    <div style="left: 85px; top: 233px; position: absolute; text-align: center; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">
+        не обработанные зерна
+    </div>
+    <div class="Rectangle1"
+         style="width: 782px; height: 41px; left: 9px; top: 14px; position: absolute; background: #B0B796; border-top-left-radius: 20px; border-top-right-radius: 20px; border: 1px #6A7662 solid"></div>
+    <div style="left: 33px; top: 20px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 600; word-wrap: break-word">
+        Разметка
+    </div>
+    <img class="Rectangle15"
+         src="./img/report_crop.png"
+         style="width: 431px; height: 398px; left: 355px; top: 65px; position: absolute; border-radius: 20px"/>
+    <div class="Rectangle18"
+         style="width: 323px; height: 28px; left: 20px; top: 64px; position: absolute; background: #B0B796; border-top-left-radius: 20px; border-top-right-radius: 20px; border: 0.70px black solid"></div>
+    <div style="width: 137px; height: 18px; left: 113px; top: 69px; position: absolute; text-align: center; color: black; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word">
+        Внесение данных
+    </div>
+    <div style="left: 85px; top: 177px; position: absolute; text-align: center; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">
+        битые зерна
+    </div>
+    <div class="Rectangle18"
+         style="width: 324px; height: 42px; left: 20px; top: 92px; position: absolute; background: rgba(176, 183, 150, 0.50)"></div>
+    <button class="Rectangle19"
+            onclick="alert('Отправлено')"
+            style="width: 325px; height: 42px; left: 20px; top: 420px; position: absolute; background: rgba(176, 183, 150, 0.50); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border-top: 0.20px #848971 solid; border-bottom: 0.20px #848971 solid"></button>
+    <div style="left: 69px; top: 102px; position: absolute; text-align: center; color: black; font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word">
+        Что вы видите на видео?
+    </div>
+    <div style="left: 133px; top: 429px; position: absolute; text-align: center; color: black; font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word">
+        Отправить
+    </div>
+
+    <div>
+        <buttton class="Rectangle17"
+                 onclick="loadHTML('main.html')"
+                 style="width: 127px; height: 41px; left: 664px; top: 14px; position: absolute; background: rgba(88, 92, 75, 0.80); border-top-right-radius: 20px; border: 1px rgba(0, 0, 0, 0.40) solid"></buttton>
+        <div onclick="loadHTML('main.html')"
+             style="left: 701px; top: 23px; position: absolute; color: #F4E7D5; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">ВЫЙТИ
+        </div>
+        <div class="Rectangle20"
+             style="width: 2px; height: 16px; left: 683px; top: 32px; position: absolute; background: #F4E7D5"></div>
+        <div class="Rectangle21" style="left: 678px; top: 20px; position: absolute;">
+            <svg fill="none" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0L11.1962 11.4545H0.803848L6 0Z" fill="#F4E7D5"/>
+            </svg>
+        </div>
+    </div>
+</div>
+</body>
+</html>
